@@ -5,7 +5,7 @@ $(data).each(function(i, element){
   $("#next"+i).click(function(){
     $("#collapse"+i).attr("class", "panel-collapse collapse");
     $("#collapse"+(i+1)).attr("class", "panel-collapse collapse in");
-  })
+  });
 });
 
 
