@@ -38,11 +38,9 @@ var Egg = function(){
 
 Egg.prototype= new Weapon();
 
-var Air = function(){
+var Wind = function(){
   this.name = "Air";
   this.damage= Math.floor(Math.random() * 4) +5;
 };
 
-Air.prototype= new Weapon();
-
-
+Wind.prototype= new Weapon();

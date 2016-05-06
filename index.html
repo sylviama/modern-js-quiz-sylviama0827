@@ -19,18 +19,21 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">Pick Player 1's MODEL</a>
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass0"></span>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">Pick a MODEL for Player 1</a>
             </h4>
           </div>
 
           <div id="collapse0" class="panel-collapse collapse in">
             <div class="panel-body">
-              <a href="#" id="player1Drone"><img id="img1" src="image/drone.png"></img></a>
-              <a href="#" id="player1Bike"><img id="img2" src="image/bike.png"></img></a>
-              <a href="#" id="player1Atv"><img id="img3" src="image/atv.png"></img></a>
+              <ul id="player1Model">
+                <li><a href="#"><img id="player1Drone" src="image/drone.png"></img></a></li>
+                <li><a href="#"><img id="player1Bike" src="image/bike.png"></img></a></li>
+                <li><a href="#"><img id="player1Atv" src="image/atv.png"></img></a></li>
+              </ul>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next0">Confirm->Next</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-primary" id="next0">Confirm->Next</button>
               </div>
             </div>
           </div>
@@ -40,18 +43,29 @@
         <div class="panel panel-default"> 
           <div class="panel-heading">
             <h4 class="panel-title">
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass1"></span>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Pick a WEAPON for Player 1</a>
+              <span class="alert alert-danger" style="display: none" id="player1WeaponAlert">
+                <span class="glyphicon glyphicon-exclamation-sign " ></span>
+                <!-- <span class="sr-only">Error:</span> -->
+                Please pick a model for Player 1 first
+              </span>
             </h4>
           </div>
 
           <div id="collapse1" class="panel-collapse collapse">
             <div class="panel-body">
-              <span>Dagger</span>
-              <span>Sword</span>
-              <span>Egg</span>
+              <ul>
+                <li><a href="#"><img id="player1Fire" src="image/fire.png"></img></a></li>
+                <li><a href="#"><img id="player1Water" src="image/water.png"></img></a></li>
+                <li><a href="#"><img id="player1Wind" src="image/wind.png"></img></a></li>
+                <li><a href="#"><img id="player1Egg" src="image/egg.png"></img></a></li>
+                <li><a href="#"><img id="player1Spear" src="image/spear.png"></img></a></li>
+                <li><a href="#"><img id="player1Dagger" src="image/dagger.png"></img></a></li>
+              </ul><br>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next1">Confirm->Next</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-primary" id="next1">Confirm->Next</button>
               </div>
             </div>
           </div>
@@ -61,19 +75,29 @@
         <div class="panel panel-default"> 
           <div class="panel-heading">
             <h4 class="panel-title">
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass2"></span>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Pick a MODIFICATION for Player 1</a>
+              <span class="alert alert-danger" style="display: none" id="player1ModificationAlert">
+                <span class="glyphicon glyphicon-exclamation-sign " ></span>
+                <!-- <span class="sr-only">Error:</span> -->
+                Please pick a model for Player 1 first
+              </span>
             </h4>
           </div>
 
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body">
-              <h4>Pick Player 1's Weapon:</h4>
-              <span>Dagger</span>
-              <span>Sword</span>
-              <span>Egg</span>
+              <ul>
+                <li><a href="#"><img id="player1GPS" src="image/GPS.png"></img></a></li>
+                <li><a href="#"><img id="player1Love" src="image/love.png"></img></a></li>
+                <li><a href="#"><img id="player1Watch" src="image/watch.png"></img></a></li>
+                <li><a href="#"><img id="player1Shield" src="image/shield.png"></img></a></li>
+                <li><a href="#"><img id="player1Steer" src="image/steer.png"></img></a></li>
+                <li><a href="#"><img id="player1Anchor" src="image/anchor.png"></img></a></li>
+              </ul><br>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next2">Confirm->Next</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-primary" id="next2">Confirm->Next</button>
               </div>
             </div>
           </div>
@@ -83,19 +107,21 @@
         <div class="panel panel-default"> 
           <div class="panel-heading">
             <h4 class="panel-title">
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass3"></span>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Pick a MODEL for Player 2</a>
             </h4>
           </div>
 
           <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">
-              <h4>Pick Player 1's Weapon:</h4>
-              <span>Dagger</span>
-              <span>Sword</span>
-              <span>Egg</span>
+              <ul>
+                <li><a href="#"><img id="player2Drone" src="image/drone.png"></img></a></li>
+                <li><a href="#"><img id="player2Bike" src="image/bike.png"></img></a></li>
+                <li><a href="#"><img id="player2Atv" src="image/atv.png"></img></a></li>
+              </ul>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next3">Confirm->Next</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-primary" id="next3">Confirm->Next</button>
               </div>
             </div>
           </div>
@@ -105,19 +131,29 @@
         <div class="panel panel-default"> 
           <div class="panel-heading">
             <h4 class="panel-title">
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass4"></span>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Pick a WEAPON for Player 2</a>
+              <span class="alert alert-danger" style="display: none" id="player2WeaponAlert">
+                <span class="glyphicon glyphicon-exclamation-sign " ></span>
+                <!-- <span class="sr-only">Error:</span> -->
+                Please pick a model for Player 2 first
+              </span>
             </h4>
           </div>
 
           <div id="collapse4" class="panel-collapse collapse">
             <div class="panel-body">
-              <h4>Pick Player 1's Weapon:</h4>
-              <span>Dagger</span>
-              <span>Sword</span>
-              <span>Egg</span>
+              <ul>
+                <li><a href="#"><img id="player2Fire" src="image/fire.png"></img></a></li>
+                <li><a href="#"><img id="player2Water" src="image/water.png"></img></a></li>
+                <li><a href="#"><img id="player2Wind" src="image/wind.png"></img></a></li>
+                <li><a href="#"><img id="player2Egg" src="image/egg.png"></img></a></li>
+                <li><a href="#"><img id="player2Spear" src="image/spear.png"></img></a></li>
+                <li><a href="#"><img id="player2Dagger" src="image/dagger.png"></img></a></li>
+              </ul><br>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next4">Confirm->Next</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-primary" id="next4">Confirm->Next</button>
               </div>
             </div>
           </div>
@@ -127,19 +163,32 @@
         <div class="panel panel-default"> 
           <div class="panel-heading">
             <h4 class="panel-title">
+              <span class=" glyphicon glyphicon-ok" style="display:none" id="pass5"></span>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Pick a MODIFICATION for Player 2</a>
+              <span class="alert alert-danger" style="display: none" id="player2ModificationAlert">
+                <span class="glyphicon glyphicon-exclamation-sign " ></span>
+                Please pick a model for Player 2 first
+              </span>
+              <span class="alert alert-danger" style="display: none" id="selectEverythingAlert">
+                <span class="glyphicon glyphicon-exclamation-sign " ></span>
+                Please pick a value in EVERY panel before moving forward
+              </span>
             </h4>
           </div>
 
           <div id="collapse5" class="panel-collapse collapse">
             <div class="panel-body">
-              <h4>Pick Player 1's Weapon:</h4>
-              <span>Dagger</span>
-              <span>Sword</span>
-              <span>Egg</span>
+              <ul>
+                <li><a href="#"><img id="player2GPS" src="image/GPS.png"></img></a></li>
+                <li><a href="#"><img id="player2Love" src="image/love.png"></img></a></li>
+                <li><a href="#"><img id="player2Watch" src="image/watch.png"></img></a></li>
+                <li><a href="#"><img id="player2Shield" src="image/shield.png"></img></a></li>
+                <li><a href="#"><img id="player2Steer" src="image/steer.png"></img></a></li>
+                <li><a href="#"><img id="player2Anchor" src="image/anchor.png"></img></a></li>
+              </ul><br>
               <div>
-                <button class="btn">Confirm</button>
-                <button class="btn" id="next5">Confirm->START!</button>
+                <button type="button" class="btn btn-info">Confirm</button>
+                <button type="button" class="btn btn-danger btn-lg" id="next5">START BATTLE</button>
               </div>
             </div>
           </div>
@@ -153,8 +202,14 @@
   <!-- ********* Battle Page ********-->
   <section id="battle">
     <div class="col-md-6" id="player1">
-      <h4 class="player-title">Player 1</h4>
-      <div class="playerIntro">An ATV with <i>17</i> Damage and <i>10</i> Protection</div>
+      <h3 class="player-title">Player 1</h4>
+
+      <div class="playerIntro">
+        <p id="player1text">An Drone with <i>17</i> Damage and <i>10</i> Protection</p>
+        <img id="Player1WeaponImg" src="image/fire.png"></img>
+        <img id="Player1ModificationImg" src="image/anchor.png"></img>
+      </div>
+
       <div class="health"><span>Player 1's Health:</span><span id="player1Health"></span></div>
       <div class="progress">
         
@@ -162,15 +217,19 @@
         </div>
       </div>
       
-      <img class="imgInBattle" id="player1Img" src="image/atv.png"></img>
-      <!-- <div><span>Player 1's damage:</span><span id="player1Damage"></span></div> -->
+      <div class="imgInBattle"><img id="player1Img" src="image/drone.png"></img></div>
     </div>
 
 
 
     <div class="col-md-6" id="player2">
-      <h4 class="player-title">Player 2</h4>
-      <div class="playerIntro">An Bipedal with <i>13</i> Damage and <i>6</i> Protection</div>
+      <h3 class="player-title">Player 2</h4>
+
+      <div class="playerIntro">
+        <p id="player2text">An Bipedal with <i>17</i> Damage and <i>10</i> Protection</p>
+        <img id="Player2WeaponImg" src="image/water.png"></img>
+        <img id="Player2ModificationImg" src="image/steer.png"></img>
+      </div>
 
       <div class="health"><span>Player 2's Health:</span><span id="player2Health"></span></div>
       <div class="progress">
@@ -180,12 +239,32 @@
         </div>
       </div>
       
-      <img class="imgInBattle" id="player2Img" src="image/bike.png"></img>
+      <div class="imgInBattle"><img id="player2Img" src="image/bike.png"></img></div>
 
-      <!-- <div><span>Player 2's damage:</span><span id="player2Damage"></span></div> -->
     </div>
 
-    <div><button id="attack" class="btn btn-default dropdown-toggle">Attack</button></div>
+    <div><button id="attack" type="button" class="btn btn-primary btn-lg" data-target="#myModal">Attack</button></div>
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
   </section>
 
@@ -204,5 +283,3 @@
   
 </body>
 </html>
-
-

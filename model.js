@@ -14,6 +14,7 @@ Robot.prototype.setModification = function(newModification){
 
 //define type/model
 var Drone = function(){
+	this.name="Drone";
   this.health= Math.floor(Math.random() * 40) +40;
 };
 
@@ -22,18 +23,16 @@ Drone.prototype = new Robot();
 
 
 var Bipedal = function(){
+	this.name="Bipedal";
   this.health= Math.floor(Math.random() * 35) +50;
 };
 
 Bipedal.prototype = new Robot();
 
 
-var ATV = function(){
+var Atv = function(){
+	this.name="ATV";
   this.health= Math.floor(Math.random() * 30) +60;
 };
 
-ATV.prototype = new Robot();
-
-
-
-
+Atv.prototype = new Robot();

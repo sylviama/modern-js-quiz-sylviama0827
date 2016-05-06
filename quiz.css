@@ -1,22 +1,51 @@
+h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+/***********************
+       Picking Page
+************************/
+
 div.panel-body img {
+  padding: 2px;
+}
+
+
+div.panel-body li {
   height: 10%;
   width: 10%;
   margin-right: 5%;
   margin-bottom: 4%;
+  padding: 3px;
+}
+
+div.panel-body li p {
+  display: inline block;
+  margin: 1px auto;
+}
+
+div.panel-body div {
+  margin-left: 5%;
+}
+
+div.panel-body button {
+  margin-right: 1%;
 }
 
 .clicked {
-  border: 1px dashed lightblue;
-  border-radius: 10px;
-  padding: 10px;
+  box-shadow:0px 0px 2px 2px lightblue inset;
+  border-radius: 20px;
+  padding: 2px;
 }
 
-
+li {
+  display: inline;
+}
 
 
 
 /***************************
-Battle Page
+           Battle Page
 ****************************/
 section#battle {
   display: inline block;
@@ -37,7 +66,16 @@ section#battle {
   float: right;
 }
 
-img#imgInBattle {
+div.progress-bar {
+  margin-bottom: 50px;
+}
+
+div..imgInBattle {
+  margin-top: 20%;
+}
+
+.imgInBattle img {
+  margin-top: 20px;
   display: block;
   margin: 5px auto;
 }
@@ -47,14 +85,26 @@ button#attack {
   margin: 50px auto;
 }
 
-h4.player-title {
+h3.player-title {
   text-align: center;
+  font-weight: bold;
 }
 
 div.health {
   margin-left: 10%;
 }
 
+.alert-danger{
+  font-size: 0.9em;
+  padding: 0.3em;
+}
+
+.glyphicon-ok {
+  color: green;
+}
+
+
+/*********Player Info*********/
 div.playerIntro {
   margin-left: 10%;
   margin-top: 5px;
@@ -64,13 +114,22 @@ div.playerIntro {
   padding: 3px 10px;
 }
 
+img#Player1WeaponImg {
+  width: 13%;
+  height: 13%;
+}
 
+img#Player1ModificationImg {
+  width: 13%;
+  height: 13%;
+}
 
+img#Player2WeaponImg {
+  width: 13%;
+  height: 13%;
+}
 
-
-
-
-
-
-
-
+img#Player2ModificationImg {
+  width: 13%;
+  height: 13%;
+}
