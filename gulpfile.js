@@ -10,7 +10,7 @@ gulp.task('watch', function() {
 
 
 gulp.task('lint', function() {
-  return gulp.src('./*.js')
+  return gulp.src('./javascripts/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
