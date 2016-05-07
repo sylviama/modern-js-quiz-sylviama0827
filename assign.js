@@ -1,7 +1,8 @@
-//clear previous click border
+//clear previous click border in the same panel
 function clearModelClickClass() {
 	$("img.clicked").removeClass("clicked");
 }
+
 
 //Pick Player 1's model
 var Player1="empty";
@@ -13,9 +14,9 @@ $("#player1Drone").click(function(){
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
   //clear previous selected border
-  clearModelClickClass();
+  clearModelClickClass()
   //give the selected a border
-  $(this).attr("class", "clicked");
+  $(this).attr("class", "player1ModelIcon clicked");
   //for battle page setup
   $("#player1Img").attr("src", "image/drone.png");
   //if one of the values are selected, give a green check
@@ -26,8 +27,8 @@ $("#player1Bike").click(function(){
   Player1 = new Bipedal();
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
-  clearModelClickClass();
-  $(this).attr("class", "clicked");
+  clearModelClickClass()
+  $(this).attr("class", "player1ModelIcon clicked");
   $("#player1Img").attr("src", "image/bike.png");
   $("#pass0").attr("style", "display:inline block");
 });
@@ -36,8 +37,8 @@ $("#player1Atv").click(function(){
   Player1 = new Atv();
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
-  clearModelClickClass();
-  $(this).attr("class", "clicked");
+  clearModelClickClass()
+  $(this).attr("class", "player1ModelIcon clicked");
   $("#player1Img").attr("src", "image/atv.png");
   $("#pass0").attr("style", "display:inline block");
 });
@@ -369,6 +370,24 @@ $("#player2Steer").click(function(){
   	$("#pass5").attr("style", "display:inline block");
   	}
 })
+
+//check if the "select EVERY to moving forward message could go away"
+$(".myIcon").click(function(){
+  if(($("#pass0").attr("style")==="display:inline block")&&
+    ($("#pass1").attr("style")==="display:inline block")&&
+    ($("#pass2").attr("style")==="display:inline block")&&
+    ($("#pass3").attr("style")==="display:inline block")&&
+    ($("#pass4").attr("style")==="display:inline block")&&
+    ($("#pass5").attr("style")==="display:inline block")){
+    $("#selectEverythingAlert").attr("style", "display:none");
+  }
+})
+
+
+
+
+
+
 
 
 

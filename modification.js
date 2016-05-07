@@ -1,5 +1,6 @@
 //define modification
 var Modification = function(){
+  this.name= "";
   this.protectionBonus =0;
   this.damageBonus =0;
 };

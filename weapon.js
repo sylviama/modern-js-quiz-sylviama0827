@@ -1,4 +1,5 @@
 var Weapon = function(){
+  this.name="";
   this.damage= 0;
 };
 

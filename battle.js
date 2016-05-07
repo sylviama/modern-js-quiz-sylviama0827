@@ -1,8 +1,13 @@
 //This fight only has Health, Damage and Protection
 $("#next5").click(function(){
   //validation rule for "Start Battle" button
-  // if($("#pass0[style]"==="display:inline block")&$("#pass1[style]"==="display:inline block")&$("#pass2[style]"==="display:inline block")&$("#pass3[style]"==="display:inline block")&$("#pass4[style]"==="display:inline block")&$("#pass5[style]"==="display:inline block")){
-    console.log("moving forward");
+  if(($("#pass0").attr("style")==="display:inline block")&&
+    ($("#pass1").attr("style")==="display:inline block")&&
+    ($("#pass2").attr("style")==="display:inline block")&&
+    ($("#pass3").attr("style")==="display:inline block")&&
+    ($("#pass4").attr("style")==="display:inline block")&&
+    ($("#pass5").attr("style")==="display:inline block")){
+
     $("#setup").hide();
     $("#battle").show();
 
@@ -49,16 +54,17 @@ $("#next5").click(function(){
 
     function Announce(){
       if(Player2Health<=0){
-        alert("Player1 Wins");
+        $("#myModal").modal("show");
         $("#attack").attr("disabled", "disabled");
       } else if(Player1Health<=0){
-        alert("Player2 Wins");
+        $(".modal-body p").html("Player 2 Wins!!")
+        $("#myModal").modal("show");
         $("#attack").attr("disabled", "disabled");
       }
     };
 
-  // }else{
-  //   $("#selectEverythingAlert").attr("style", "display: inline block");
-  // }
+  }else{
+    $("#selectEverythingAlert").attr("style", "display: inline block");
+  }
    
 });

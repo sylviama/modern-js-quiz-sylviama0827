@@ -133,3 +133,16 @@ img#Player2ModificationImg {
   width: 13%;
   height: 13%;
 }
+
+/***********Modal Window*******/
+.modal-content {
+  background-color: lightblue;
+}
+
+.modal-body p{
+  text-align: center;
+  font-size: 2em;
+}
+
+
+
