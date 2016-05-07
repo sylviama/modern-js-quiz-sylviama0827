@@ -36,6 +36,9 @@ $("#next5").click(function(){
       setTimeout(Player2Attack, 1000);
       setTimeout(Announce, 2200);
     });
+  }else{
+    $("#selectEverythingAlert").attr("style", "display: inline block");
+  }
 
 
     function Player1Attack(){
@@ -43,28 +46,28 @@ $("#next5").click(function(){
       $("#player2Health").html("<b><i>"+Player2Health+"</i></b>");
       $("#player2Progress").attr("style", "width:"+Player2Health/Player2.health*100+"%");
       $("#player1Img").effect("shake", {times:4}, 1000);
-    };
+    }
 
     function Player2Attack(){
       Player1Health = Player1Health -Math.max((Player2Damage-Player1Protection), 0);
       $("#player1Health").html("<b><i>"+Player1Health+"</i></b>");
       $("#player1Progress").attr("style", "width:"+Player1Health/Player1.health*100+"%");
       $("#player2Img").effect("shake", {times:4}, 1000);
-    };
+    }
 
     function Announce(){
       if(Player2Health<=0){
         $("#myModal").modal("show");
         $("#attack").attr("disabled", "disabled");
       } else if(Player1Health<=0){
-        $(".modal-body p").html("Player 2 Wins!!")
+        $(".modal-body p").html("Player 2 Wins!!");
         $("#myModal").modal("show");
         $("#attack").attr("disabled", "disabled");
       }
-    };
-
-  }else{
-    $("#selectEverythingAlert").attr("style", "display: inline block");
-  }
-   
+    }
+      
 });
+
+
+
+

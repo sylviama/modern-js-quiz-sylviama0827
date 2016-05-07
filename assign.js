@@ -14,7 +14,7 @@ $("#player1Drone").click(function(){
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
   //clear previous selected border
-  clearModelClickClass()
+  clearModelClickClass();
   //give the selected a border
   $(this).attr("class", "player1ModelIcon clicked");
   //for battle page setup
@@ -27,7 +27,7 @@ $("#player1Bike").click(function(){
   Player1 = new Bipedal();
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
-  clearModelClickClass()
+  clearModelClickClass();
   $(this).attr("class", "player1ModelIcon clicked");
   $("#player1Img").attr("src", "image/bike.png");
   $("#pass0").attr("style", "display:inline block");
@@ -37,7 +37,7 @@ $("#player1Atv").click(function(){
   Player1 = new Atv();
   $("#player1WeaponAlert").attr("style", "display:none");
   $("#player1ModificationAlert").attr("style", "display:none");
-  clearModelClickClass()
+  clearModelClickClass();
   $(this).attr("class", "player1ModelIcon clicked");
   $("#player1Img").attr("src", "image/atv.png");
   $("#pass0").attr("style", "display:inline block");
@@ -56,7 +56,7 @@ $("#player1Fire").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/fire.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Water").click(function(){
 	if(Player1==="empty"){
@@ -68,7 +68,7 @@ $("#player1Water").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/water.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Wind").click(function(){
 	if(Player1==="empty"){
@@ -80,7 +80,7 @@ $("#player1Wind").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/wind.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Egg").click(function(){
 	if(Player1==="empty"){
@@ -92,7 +92,7 @@ $("#player1Egg").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/egg.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Spear").click(function(){
 	if(Player1==="empty"){
@@ -104,7 +104,7 @@ $("#player1Spear").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/spear.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Dagger").click(function(){
 	if(Player1==="empty"){
@@ -116,7 +116,7 @@ $("#player1Dagger").click(function(){
   	$("#Player1WeaponImg").attr("src", "image/dagger.png");
   	$("#pass1").attr("style", "display:inline block");
   	}
-})
+});
 
 //assign modification to Player1
 $("#player1GPS").click(function(){
@@ -129,7 +129,7 @@ $("#player1GPS").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/GPS.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Love").click(function(){
 	if(Player1==="empty"){
@@ -141,7 +141,7 @@ $("#player1Love").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/love.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Anchor").click(function(){
 	if(Player1==="empty"){
@@ -153,7 +153,7 @@ $("#player1Anchor").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/anchor.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Watch").click(function(){
 	if(Player1==="empty"){
@@ -165,7 +165,7 @@ $("#player1Watch").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/watch.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Shield").click(function(){
 	if(Player1==="empty"){
@@ -177,7 +177,7 @@ $("#player1Shield").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/shield.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player1Steer").click(function(){
 	if(Player1==="empty"){
@@ -189,7 +189,7 @@ $("#player1Steer").click(function(){
   	$("#Player1ModificationImg").attr("src", "image/steer.png");
   	$("#pass2").attr("style", "display:inline block");
   	}
-})
+});
 
 
 //Pick Player 2's model
@@ -236,7 +236,7 @@ $("#player2Fire").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/fire.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Water").click(function(){
 	if(Player2==="empty"){
@@ -248,7 +248,7 @@ $("#player2Water").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/water.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Wind").click(function(){
 	if(Player2==="empty"){
@@ -260,7 +260,7 @@ $("#player2Wind").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/wind.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Egg").click(function(){
 	if(Player2==="empty"){
@@ -272,7 +272,7 @@ $("#player2Egg").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/egg.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Spear").click(function(){
 	if(Player2==="empty"){
@@ -284,7 +284,7 @@ $("#player2Spear").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/spear.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Dagger").click(function(){
 	if(Player2==="empty"){
@@ -296,7 +296,7 @@ $("#player2Dagger").click(function(){
   	$("#Player2WeaponImg").attr("src", "image/dagger.png");
   	$("#pass4").attr("style", "display:inline block");
   	}
-})
+});
 
 //assign modification to Player2
 $("#player2GPS").click(function(){
@@ -309,7 +309,7 @@ $("#player2GPS").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/GPS.png");
   	$("#pass5").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Love").click(function(){
 	if(Player2==="empty"){
@@ -321,7 +321,7 @@ $("#player2Love").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/love.png");
   	$("#pass5").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Anchor").click(function(){
 	if(Player2==="empty"){
@@ -333,7 +333,7 @@ $("#player2Anchor").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/anchor.png");
   	$("#pass5").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Watch").click(function(){
 	if(Player2==="empty"){
@@ -345,7 +345,7 @@ $("#player2Watch").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/watch.png");
   	$("#pass5").attr("style", "display:inline block");
  	}
-})
+});
 
 $("#player2Shield").click(function(){
 	if(Player2==="empty"){
@@ -357,7 +357,7 @@ $("#player2Shield").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/shield.png");
   	$("#pass5").attr("style", "display:inline block");
   	}
-})
+});
 
 $("#player2Steer").click(function(){
 	if(Player2==="empty"){
@@ -369,7 +369,7 @@ $("#player2Steer").click(function(){
   	$("#Player2ModificationImg").attr("src", "image/steer.png");
   	$("#pass5").attr("style", "display:inline block");
   	}
-})
+});
 
 //check if the "select EVERY to moving forward message could go away"
 $(".myIcon").click(function(){
@@ -381,7 +381,7 @@ $(".myIcon").click(function(){
     ($("#pass5").attr("style")==="display:inline block")){
     $("#selectEverythingAlert").attr("style", "display:none");
   }
-})
+});
 
 
 
