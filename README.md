@@ -1,7 +1,7 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome
 
-<img width="1162" alt="shot1" src="https://cloud.githubusercontent.com/assets/16583776/15101673/2b471192-155b-11e6-9d60-d5ba453920fa.png">
+<img width="1165" alt="shot3" src="https://cloud.githubusercontent.com/assets/16583776/15102139/7732ee90-1561-11e6-8b98-588be9732904.png">
 
 <img width="1193" alt="shot2" src="https://cloud.githubusercontent.com/assets/16583776/15101693/893cbb1c-155b-11e6-8310-dcb9f57eacce.png">
 
