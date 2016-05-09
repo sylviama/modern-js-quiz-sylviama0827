@@ -2,6 +2,15 @@
 
 var Game1=(function(originalGame){
 
+    originalGame.clearModelButtons= function(){
+      $("#player1DroneButtons").attr("style", "display:none");
+      $("#player1BikeButtons").attr("style", "display:none");
+      $("#player1AtvButtons").attr("style", "display:none");
+      $("#player2DroneButtons").attr("style", "display:none");
+      $("#player2BikeButtons").attr("style", "display:none");
+      $("#player2AtvButtons").attr("style", "display:none");
+    }
+
     const obj={};
     originalGame.setPlayers= function(){
 
@@ -10,6 +19,19 @@ var Game1=(function(originalGame){
       
       $("#player1Drone").click(function(){
         obj.Player1= new Game1.Drone();
+        //show the hidden model pick buttons
+        originalGame.clearModelButtons();
+        $("#player1DroneButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player1BasicDrone").click(function(){
+          obj.Player1= new Game1.BasicDrone();
+        })
+
+        $("#player1AdvancedDrone").click(function(){
+          obj.Player1= new Game1.AdvancedDrone();
+        })
+        
         //if model is selected, all the error message will be clear
         $("#player1WeaponAlert").attr("style", "display:none");
         $("#player1ModificationAlert").attr("style", "display:none");
@@ -19,16 +41,44 @@ var Game1=(function(originalGame){
         $("#pass0").attr("style", "display:inline block");
       });
 
+
       $("#player1Bike").click(function(){
         obj.Player1 = new Game1.Bipedal();
+        //show the hidden model pick buttons
+        originalGame.clearModelButtons();
+        $("#player1BikeButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player1BasicBipedal").click(function(){
+          obj.Player1= new Game1.BasicBipedal();
+        })
+
+        $("#player1AdvancedBipedal").click(function(){
+          obj.Player1= new Game1.AdvancedBipedal();
+        })
+
         $("#player1WeaponAlert").attr("style", "display:none");
         $("#player1ModificationAlert").attr("style", "display:none");
         $("#player1Img").attr("src", "image/bike.png");
         $("#pass0").attr("style", "display:inline block");
       });
 
+
       $("#player1Atv").click(function(){
         obj.Player1 = new Game1.Atv();
+         //show the hidden model pick buttons
+         originalGame.clearModelButtons();
+        $("#player1AtvButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player1AtvBipedal").click(function(){
+          obj.Player1= new Game1.BasicAtv();
+        })
+
+        $("#player1AdvancedAtv").click(function(){
+          obj.Player1= new Game1.AdvancedAtv();
+        })
+
         $("#player1WeaponAlert").attr("style", "display:none");
         $("#player1ModificationAlert").attr("style", "display:none");
         $("#player1Img").attr("src", "image/atv.png");
@@ -168,6 +218,19 @@ var Game1=(function(originalGame){
         $("#player2WeaponAlert").attr("style", "display:none");
         $("#player2ModificationAlert").attr("style", "display:none");
         obj.Player2 = new Game1.Drone();
+        //show the hidden model pick buttons
+        originalGame.clearModelButtons();
+        $("#player2DroneButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player2BasicDrone").click(function(){
+          obj.Player2= new Game1.BasicDrone();
+        })
+
+        $("#player1AdvancedDrone").click(function(){
+          obj.Player2= new Game1.AdvancedDrone();
+        })
+
         $("#player2Img").attr("src", "image/drone.png");
         $("#pass3").attr("style", "display:inline block");
       });
@@ -176,6 +239,19 @@ var Game1=(function(originalGame){
         $("#player2WeaponAlert").attr("style", "display:none");
         $("#player2ModificationAlert").attr("style", "display:none");
         obj.Player2 = new Game1.Bipedal();
+        //show the hidden model pick buttons
+        originalGame.clearModelButtons();
+        $("#player2BikeButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player2BasicBike").click(function(){
+          obj.Player2= new Game1.BasicBipedal();
+        })
+
+        $("#player2AdvancedBike").click(function(){
+          obj.Player2= new Game1.AdvancedBipedal();
+        })
+
         $("#player2Img").attr("src", "image/bike.png");
         $("#pass3").attr("style", "display:inline block");
       });
@@ -184,6 +260,19 @@ var Game1=(function(originalGame){
         $("#player2WeaponAlert").attr("style", "display:none");
         $("#player2ModificationAlert").attr("style", "display:none");
         obj.Player2 = new Game1.Atv();
+        //show the hidden model pick buttons
+        originalGame.clearModelButtons();
+        $("#player2AtvButtons").attr("style", "display: inline");
+
+        //pick a model(optional)
+        $("#player2BasicAtv").click(function(){
+          obj.Player2= new Game1.BasicAtv();
+        })
+
+        $("#player2AdvancedAtv").click(function(){
+          obj.Player2= new Game1.AdvancedAtv();
+        })
+
         $("#player2Img").attr("src", "image/atv.png");
         $("#pass3").attr("style", "display:inline block");
       });

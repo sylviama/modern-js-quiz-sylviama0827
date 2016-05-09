@@ -11,8 +11,34 @@ h1 {
        Picking Page
 ************************/
 
-div.panel-body img {
-  padding: 2px;
+#player1Drone {
+  width: 150%;
+  height: 150%;
+}
+
+#player1Bike {
+  width: 150%;
+  height: 150%;
+}
+
+#player1Atv {
+  width: 150%;
+  height: 150%;
+}
+
+#player2Drone {
+  width: 150%;
+  height: 150%;
+}
+
+#player2Bike {
+  width: 150%;
+  height: 150%;
+}
+
+#player2Atv {
+  width: 150%;
+  height: 150%;
 }
 
 

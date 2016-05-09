@@ -27,11 +27,30 @@
 
           <div id="collapse0" class="panel-collapse collapse in">
             <div class="panel-body">
-              <ul id="player1Model">
-                <li><a href="#"><img class="myIcon" id="player1Drone" src="image/drone.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player1Bike" src="image/bike.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player1Atv" src="image/atv.png"></img></a></li>
+              <ul id="player1Model" class="row">
+                <li class="col-md-4">
+                  <a href="#"><img class="myIcon" id="player1Drone" src="image/drone.png"></img></a>
+                  <div id="player1DroneButtons" style="display:none">
+                    <a href="#" id="player1BasicDrone">Basic</a>
+                    <a href="#" id="player1AdvancedDrone">Advanced</a>
+                  </div>
+                </li>
+
+                <li class="col-md-4"><a href="#"><img class="myIcon" id="player1Bike" src="image/bike.png"></img></a>
+                <div id="player1BikeButtons" style="display:none">
+                  <a href="#" id="player1BasicBike">Basic</a>
+                  <a href="#" id="player1AdvancedBike">Advanced</a>
+                </div>
+                </li>
+
+                <li class="col-md-4"><a href="#"><img class="myIcon" id="player1Atv" src="image/atv.png"></img></a><br>
+                <div id="player1AtvButtons" style="display:none">
+                  <a href="#" id="player1BasicAtv">Basic</a>
+                  <a href="#" id="player1AdvancedAtv">Advanced</a>
+                </div>
+                </li>
               </ul>
+
               <div>
                 <button type="button" class="btn btn-primary" id="next0">Confirm->Next</button>
               </div>
@@ -110,11 +129,32 @@
 
           <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">
-              <ul>
-                <li><a href="#"><img class="myIcon" id="player2Drone" src="image/drone.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player2Bike" src="image/bike.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player2Atv" src="image/atv.png"></img></a></li>
+              <ul id="player1Model" class="row">
+                <li class="col-md-4">
+                  <a href="#"><img class="myIcon" id="player2Drone" src="image/drone.png"></img></a>
+                  <div id="player2DroneButtons" style="display:none">
+                    <a href="#" id="player2BasicDrone">Basic</a>
+                    <a href="#" id="player2AdvancedDrone">Advanced</a>
+                  </div>
+                </li>
+
+                <li class="col-md-4">
+                  <a href="#"><img class="myIcon" id="player2Bike" src="image/bike.png"></img></a>
+                  <div id="player2BikeButtons" style="display:none">
+                    <a href="#" id="player2BasicBike">Basic</a>
+                    <a href="#" id="player2AdvancedBike">Advanced</a>
+                  </div>
+                </li>
+
+                <li class="col-md-4">
+                  <a href="#"><img class="myIcon" id="player2Atv" src="image/atv.png"></img></a><br>
+                  <div id="player2AtvButtons" style="display:none">
+                    <a href="#" id="player2BasicAtv">Basic</a>
+                    <a href="#" id="player2AdvancedAtv">Advanced</a>
+                  </div>
+                </li>
               </ul>
+
               <div>
                 <button type="button" class="btn btn-primary" id="next3">Confirm->Next</button>
               </div>
