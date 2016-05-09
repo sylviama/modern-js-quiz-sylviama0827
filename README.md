@@ -1,9 +1,9 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome
 
-!(modern-js-quiz-sylviama0827/image/shot1.png)
+![Shot1](modern-js-quiz-sylviama0827/image/shot1.png)
 
-!(modern-js-quiz-sylviama0827/image/shot2.png)
+![Shot2](modern-js-quiz-sylviama0827/image/shot2.png)
 
 ## Setup
 
