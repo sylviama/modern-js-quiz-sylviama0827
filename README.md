@@ -1,6 +1,10 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome
 
+!(modern-js-quiz-sylviama0827/image/shot1.png)
+
+!(modern-js-quiz-sylviama0827/image/shot2.png)
+
 ## Setup
 
 1. `cd` to your quizzes directory.
