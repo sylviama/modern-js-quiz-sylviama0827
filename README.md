@@ -1,9 +1,9 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome
 
-![Shot1](https://raw.github.com/modern-js-quiz-sylviama0827/image/shot1.png)
+![Shot1](https://raw.github.com/nss-evening-cohort-3/modern-js-quiz-sylviama0827/image/shot1.png)
 
-![Shot2](https://raw.github.com/modern-js-quiz-sylviama0827/image/shot2.png)
+![Shot2](https://raw.github.com/nss-evening-cohort-3/modern-js-quiz-sylviama0827/image/shot2.png)
 
 ## Setup
 
