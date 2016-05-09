@@ -1,7 +1,7 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome
 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="13%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105284/26aa7ad4-63ae-11e5-88b7-bc523a095c9f.png" width="13%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105288/28698fae-63ae-11e5-8ba7-a62360a8e8a7.png" width="13%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png" width="13%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="13%"></img> 
+<img width="1162" alt="shot1" src="https://cloud.githubusercontent.com/assets/16583776/15101673/2b471192-155b-11e6-9d60-d5ba453920fa.png">
 
 ![Shot2](https://raw.github.com/nss-evening-cohort-3/modern-js-quiz-sylviama0827/image/shot2.png)
 
