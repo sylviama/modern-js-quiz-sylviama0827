@@ -1,51 +1,55 @@
-/*jshint esversion: 6 */
-/*jshint globalstrict: true*/
 "use strict";
 
-var Weapon = function(){
-  this.name="";
-  this.damage= 0;
-};
+var Game1=(function(originalGame){
 
-//six kinds of weapon
-var Fire = function(){
-  this.name = "Fire";
-  this.damage= Math.floor(Math.random() * 4) +4;
-};
+  originalGame.Weapon = function(){
+    this.name="";
+    this.damage= 0;
+  };
 
-Fire.prototype = new Weapon();
+  //six kinds of weapon
+  originalGame.Fire = function(){
+    this.name = "Fire";
+    this.damage= Math.floor(Math.random() * 4) +4;
+  };
 
-var Spear = function(){
-  this.name = "Spear";
-  this.damage= Math.floor(Math.random() * 5) +3;
-};
+  originalGame.Fire.prototype = new originalGame.Weapon();
 
-Spear.prototype= new Weapon();
+  originalGame.Spear = function(){
+    this.name = "Spear";
+    this.damage= Math.floor(Math.random() * 5) +3;
+  };
 
-var Water = function(){
-  this.name = "Water";
-  this.damage= Math.floor(Math.random() * 6) +2;
-};
+  originalGame.Spear.prototype= new originalGame.Weapon();
 
-Water.prototype= new Weapon();
+  originalGame.Water = function(){
+    this.name = "Water";
+    this.damage= Math.floor(Math.random() * 6) +2;
+  };
 
-var Dagger = function(){
-  this.name = "Dagger";
-  this.damage= Math.floor(Math.random() * 7) +1;
-};
+  originalGame.Water.prototype= new originalGame.Weapon();
 
-Dagger.prototype= new Weapon();
+  originalGame.Dagger = function(){
+    this.name = "Dagger";
+    this.damage= Math.floor(Math.random() * 7) +1;
+  };
 
-var Egg = function(){
-  this.name = "Egg";
-  this.damage= Math.floor(Math.random() * 3) +10;
-};
+  originalGame.Dagger.prototype= new originalGame.Weapon();
 
-Egg.prototype= new Weapon();
+  originalGame.Egg = function(){
+    this.name = "Egg";
+    this.damage= Math.floor(Math.random() * 3) +10;
+  };
 
-var Wind = function(){
-  this.name = "Air";
-  this.damage= Math.floor(Math.random() * 4) +5;
-};
+  originalGame.Egg.prototype= new originalGame.Weapon();
 
-Wind.prototype= new Weapon();
+  originalGame.Wind = function(){
+    this.name = "Air";
+    this.damage= Math.floor(Math.random() * 4) +5;
+  };
+
+  originalGame.Wind.prototype= new originalGame.Weapon();
+
+  return originalGame;
+})(Game1||{});
+

@@ -1,57 +1,61 @@
-/*jshint esversion: 6 */
-/*jshint globalstrict: true*/
 "use strict";
 
-//define modification
-const Modification = function(){
-  this.name= "";
-  this.protectionBonus =0;
-  this.damageBonus =0;
-};
+var Game1=(function(originalGame){
 
-//six kinds of modification
-const Shield = function(){
-  this.name="Shield";
-  this.protectionBonus = 2;
-};
+  //define modification
+  originalGame.Modification = function(){
+    this.name= "";
+    this.protectionBonus =0;
+    this.damageBonus =0;
+  };
 
-Shield.prototype = new Modification();
+  //six kinds of modification
+  originalGame.Shield = function(){
+    this.name="Shield";
+    this.protectionBonus = 2;
+  };
 
-const Love = function(){
-  this.name="Love";
-  this.protectionBonus = 3;
-  this.damageBonus =10;
-};
+  originalGame.Shield.prototype = new originalGame.Modification();
 
-Love.prototype = new Modification();
+  originalGame.Love = function(){
+    this.name="Love";
+    this.protectionBonus = 3;
+    this.damageBonus =10;
+  };
 
-const Anchor = function(){
-  this.name="Anchor";
-  this.protectionBonus = 3;
-};
+  originalGame.Love.prototype = new originalGame.Modification();
 
-Anchor.prototype = new Modification();
+  originalGame.Anchor = function(){
+    this.name="Anchor";
+    this.protectionBonus = 3;
+  };
 
-const GPS = function(){
-  this.name="GPS";
-  this.protectionBonus = 1;
-  this.damageBonus= 5;
-};
+  originalGame.Anchor.prototype = new originalGame.Modification();
 
-GPS.prototype = new Modification();
+  originalGame.GPS = function(){
+    this.name="GPS";
+    this.protectionBonus = 1;
+    this.damageBonus= 5;
+  };
 
-const Watch = function(){
-  this.name="Watch";
-  this.damageBonus = 30;
-};
+  originalGame.GPS.prototype = new originalGame.Modification();
 
-Watch.prototype = new Modification();
+  originalGame.Watch = function(){
+    this.name="Watch";
+    this.damageBonus = 30;
+  };
 
-const Steering = function(){
-  this.name="Steering";
-  this.protectionBonus = 4;
-  this.damageBonus=15;
-};
+  originalGame.Watch.prototype = new originalGame.Modification();
 
-Steering.prototype = new Modification();
+  originalGame.Steering = function(){
+    this.name="Steering";
+    this.protectionBonus = 4;
+    this.damageBonus=15;
+  };
+
+  originalGame.Steering.prototype = new originalGame.Modification();
+
+  return originalGame;
+})(Game1||{});
+
 

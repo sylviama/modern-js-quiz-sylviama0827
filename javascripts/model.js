@@ -1,39 +1,47 @@
 "use strict";
-var Robot = function(){
-  this.health =0;
-  this.weapon = null;
-  this.modification = null;
-};
 
-Robot.prototype.setWeapon= function(newWeapon){
- this.weapon = newWeapon;
-};
+var Game1= (function(originalGame){
 
-Robot.prototype.setModification = function(newModification){
-  this.modification = newModification;
-};
+  originalGame.Robot = function(){
+    this.health =0;
+    this.weapon = null;
+    this.modification = null;
+  };
 
-//define type/model
-var Drone = function(){
-	this.name="Drone";
-  this.health= Math.floor(Math.random() * 40) +40;
-};
+  originalGame.Robot.prototype.setWeapon= function(newWeapon){
+   this.weapon = newWeapon;
+  };
 
+  originalGame.Robot.prototype.setModification = function(newModification){
+    this.modification = newModification;
+  };
 
-Drone.prototype = new Robot();
+  //define type/model
+  originalGame.Drone = function(){
+  	this.name="Drone";
+    this.health= Math.floor(Math.random() * 40) +40;
+  };
 
-
-var Bipedal = function(){
-	this.name="Bipedal";
-  this.health= Math.floor(Math.random() * 35) +50;
-};
-
-Bipedal.prototype = new Robot();
+  originalGame.Drone.prototype = new originalGame.Robot();
 
 
-var Atv = function(){
-	this.name="ATV";
-  this.health= Math.floor(Math.random() * 30) +60;
-};
+  originalGame.Bipedal = function(){
+  	this.name="Bipedal";
+    this.health= Math.floor(Math.random() * 35) +50;
+  };
 
-Atv.prototype = new Robot();
+  originalGame.Bipedal.prototype = new originalGame.Robot();
+
+
+  originalGame.Atv = function(){
+  	this.name="ATV";
+    this.health= Math.floor(Math.random() * 30) +60;
+  };
+
+  originalGame.Atv.prototype = new originalGame.Robot();
+
+  return originalGame;
+
+})(Game1||{});
+
+
