@@ -25,7 +25,7 @@ h1 {
   width: 150%;
   height: 150%;
 }
-
+/*
 #player2Drone {
   width: 150%;
   height: 150%;
@@ -40,7 +40,7 @@ h1 {
   width: 150%;
   height: 150%;
 }
-
+*/
 
 div.panel-body li {
   height: 10%;
@@ -155,6 +155,10 @@ img#Player1ModificationImg {
   height: 13%;
 }
 
+img#player1AnimalStyleImg {
+  width: 13%;
+  height: 13%;
+}
 img#Player2WeaponImg {
   width: 13%;
   height: 13%;

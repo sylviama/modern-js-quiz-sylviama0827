@@ -34,9 +34,11 @@ var Game1=(function(originalGame){
         $("#player1Health").html(Player1Health);
         $("#player2Health").html(Player2Health);
 
-        $("#player1text").html("A(n) "+Obj.Player1.name+" with "+Obj.Player1.weapon.name+" and "+Obj.Player1.modification.name+". <br>Damage: "+Player1Damage+"; Protection: "+Player1Protection+".");
-        $("#player2text").html("A(n) "+Obj.Player2.name+" with "+Obj.Player2.weapon.name+" and "+Obj.Player2.modification.name+". <br>Damage: "+Player2Damage+"; Protection: "+Player2Protection+".");
+        //$("#player1text").html("A(n) "+Obj.Player1.name+" with "+Obj.Player1.weapon.name+" and "+Obj.Player1.modification.name+". <br>Damage: "+Player1Damage+"; Protection: "+Player1Protection+".");
+        //$("#player2text").html("A(n) "+Obj.Player2.name+" with "+Obj.Player2.weapon.name+" and "+Obj.Player2.modification.name+". <br>Damage: "+Player2Damage+"; Protection: "+Player2Protection+".");
         
+        $("#player1text").html("Damage: "+Player1Damage+"; Protection: "+Player1Protection+".");
+        $("#player2text").html("Damage: "+Player2Damage+"; Protection: "+Player2Protection+".");
         //fight starts
         $("#attack").click(function(){
           originalGame.Player1Attack();
@@ -68,7 +70,7 @@ var Game1=(function(originalGame){
             $("#myModal").modal("show");
             $("#attack").attr("disabled", "disabled");
           } else if(Player1Health<=0){
-            $(".modal-body p").html("Player 2 Wins!!");
+            $(".modal-body p").html("Sylvia Wins!!");
             $("#myModal").modal("show");
             $("#attack").attr("disabled", "disabled");
           }

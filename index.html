@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Robot</title>
+  <title>Tommy</title>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-  <h1>ROBOT GAME</h1>
+  <h1>TOMMY FIGHT!</h1>
 
   <!-- ********* Option Picking Page ********-->
   <section id="setup">
@@ -21,7 +21,7 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass0"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">Pick a MODEL for Player 1</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">Pick Tommy's SHAPE</a>
             </h4>
           </div>
 
@@ -29,24 +29,17 @@
             <div class="panel-body">
               <ul id="player1Model" class="row">
                 <li class="col-md-4">
-                  <a href="#"><img class="myIcon" id="player1Drone" src="image/drone.png"></img></a>
+                  <a href="#"><img class="myIcon" id="player1Drone" src="image/Fat.png"></img></a>
                   <div id="player1DroneButtons" style="display:none">
-                    <a href="#" id="player1BasicDrone">Basic</a>
-                    <a href="#" id="player1AdvancedDrone">Advanced</a>
+                    <!--<a href="#" id="player1BasicDrone">Basic</a>-->
+                    <!--<a href="#" id="player1AdvancedDrone">Advanced</a>-->
                   </div>
                 </li>
 
-                <li class="col-md-4"><a href="#"><img class="myIcon" id="player1Bike" src="image/bike.png"></img></a>
+                <li class="col-md-4"><a href="#"><img class="myIcon" id="player1Bike" src="image/skinny2.png"></img></a>
                 <div id="player1BikeButtons" style="display:none">
-                  <a href="#" id="player1BasicBike">Basic</a>
-                  <a href="#" id="player1AdvancedBike">Advanced</a>
-                </div>
-                </li>
-
-                <li class="col-md-4"><a href="#"><img class="myIcon" id="player1Atv" src="image/atv.png"></img></a><br>
-                <div id="player1AtvButtons" style="display:none">
-                  <a href="#" id="player1BasicAtv">Basic</a>
-                  <a href="#" id="player1AdvancedAtv">Advanced</a>
+                  <!--<a href="#" id="player1BasicBike">Basic</a>-->
+                  <!--<a href="#" id="player1AdvancedBike">Advanced</a>-->
                 </div>
                 </li>
               </ul>
@@ -63,10 +56,10 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass1"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Pick a WEAPON for Player 1</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Pick a GLASSES STYLE</a>
               <span class="alert alert-danger" style="display: none" id="player1WeaponAlert">
                 <span class="glyphicon glyphicon-exclamation-sign " ></span>
-                Please pick a model for Player 1 first
+                Please pick Tommy's Shape first
               </span>
             </h4>
           </div>
@@ -74,12 +67,14 @@
           <div id="collapse1" class="panel-collapse collapse">
             <div class="panel-body">
               <ul>
-                <li><a href="#"><img class="myIcon" id="player1Fire" src="image/fire.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player1Water" src="image/water.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player1Wind" src="image/wind.png"></img></a></li>
+                <li><a href="#"><img class="myIcon" id="player1Fire" src="image/RedGlasses.png"></img></a></li>
+                <li><a href="#"><img class="myIcon" id="player1Water" src="image/BlackGlasses.png"></img></a></li>
+                <li><a href="#"><img class="myIcon" id="player1Wind" src="image/NoGlasses.png"></img></a></li>
+                <!--
                 <li><a href="#"><img class="myIcon" id="player1Egg" src="image/egg.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player1Spear" src="image/spear.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player1Dagger" src="image/dagger.png"></img></a></li>
+                -->
               </ul><br>
               <div>
                 <button type="button" class="btn btn-primary" id="next1">Confirm->Next</button>
@@ -93,10 +88,10 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass2"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Pick a MODIFICATION for Player 1</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Pick HAIR LENGTH</a>
               <span class="alert alert-danger" style="display: none" id="player1ModificationAlert">
                 <span class="glyphicon glyphicon-exclamation-sign " ></span>
-                Please pick a model for Player 1 first
+                Please pick Tommy's Shape first
               </span>
             </h4>
           </div>
@@ -104,12 +99,14 @@
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body">
               <ul>
-                <li><a href="#"><img class="myIcon" id="player1GPS" src="image/GPS.png"></img></a></li>
-                <li><a href="#"><img class="myIcon" id="player1Love" src="image/love.png"></img></a></li>
+                <li><a href="#"><img class="myIcon" id="player1GPS" src="image/HairLong.png"></img></a></li>
+                <li><a href="#"><img class="myIcon" id="player1Love" src="image/HairShort.png"></img></a></li>
+                <!--
                 <li><a href="#"><img class="myIcon" id="player1Watch" src="image/watch.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player1Shield" src="image/shield.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player1Steer" src="image/steer.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player1Anchor" src="image/anchor.png"></img></a></li>
+              -->
               </ul><br>
               <div>
                 <button type="button" class="btn btn-primary" id="next2">Confirm->Next</button>
@@ -123,7 +120,7 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass3"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Pick a MODEL for Player 2</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Pick Tommy's ANIMAL STYLE</a>
             </h4>
           </div>
 
@@ -131,26 +128,32 @@
             <div class="panel-body">
               <ul id="player1Model" class="row">
                 <li class="col-md-4">
-                  <a href="#"><img class="myIcon" id="player2Drone" src="image/drone.png"></img></a>
+                  <a href="#"><img class="myIcon" id="player2Drone" src="image/Bear2.png"></img></a>
                   <div id="player2DroneButtons" style="display:none">
+                    <!--
                     <a href="#" id="player2BasicDrone">Basic</a>
                     <a href="#" id="player2AdvancedDrone">Advanced</a>
+                    -->
                   </div>
                 </li>
 
                 <li class="col-md-4">
-                  <a href="#"><img class="myIcon" id="player2Bike" src="image/bike.png"></img></a>
+                  <a href="#"><img class="myIcon" id="player2Bike" src="image/Rabbit2.png"></img></a>
                   <div id="player2BikeButtons" style="display:none">
+                    <!--
                     <a href="#" id="player2BasicBike">Basic</a>
                     <a href="#" id="player2AdvancedBike">Advanced</a>
+                    -->
                   </div>
                 </li>
 
                 <li class="col-md-4">
-                  <a href="#"><img class="myIcon" id="player2Atv" src="image/atv.png"></img></a><br>
+                  <a href="#"><img class="myIcon" id="player2Atv" src="image/Bunny2.png"></img></a><br>
                   <div id="player2AtvButtons" style="display:none">
+                    <!--
                     <a href="#" id="player2BasicAtv">Basic</a>
                     <a href="#" id="player2AdvancedAtv">Advanced</a>
+                    -->
                   </div>
                 </li>
               </ul>
@@ -167,10 +170,10 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass4"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Pick a WEAPON for Player 2</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Pick a WEAPON</a>
               <span class="alert alert-danger" style="display: none" id="player2WeaponAlert">
                 <span class="glyphicon glyphicon-exclamation-sign " ></span>
-                Please pick a model for Player 2 first
+                Please pick Tommy's animal style
               </span>
             </h4>
           </div>
@@ -197,10 +200,10 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <span class=" glyphicon glyphicon-ok" style="display:none" id="pass5"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Pick a MODIFICATION for Player 2</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Pick a MODIFICATION</a>
               <span class="alert alert-danger" style="display: none" id="player2ModificationAlert">
                 <span class="glyphicon glyphicon-exclamation-sign " ></span>
-                Please pick a model for Player 2 first
+                Please pick Tommy's animal style
               </span>
               <span class="alert alert-danger" style="display: none" id="selectEverythingAlert">
                 <span class="glyphicon glyphicon-exclamation-sign " ></span>
@@ -210,7 +213,7 @@
           </div>
 
           <div id="collapse5" class="panel-collapse collapse">
-            <div class="panel-body">
+            <div class="panel-body">             
               <ul>
                 <li><a href="#"><img class="myIcon" id="player2GPS" src="image/GPS.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player2Love" src="image/love.png"></img></a></li>
@@ -218,7 +221,7 @@
                 <li><a href="#"><img class="myIcon" id="player2Shield" src="image/shield.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player2Steer" src="image/steer.png"></img></a></li>
                 <li><a href="#"><img class="myIcon" id="player2Anchor" src="image/anchor.png"></img></a></li>
-              </ul><br>
+              </ul><br>              
               <div>
                 <button type="button" class="btn btn-danger btn-lg" id="next5">START BATTLE</button>
               </div>
@@ -234,36 +237,36 @@
   <!-- ********* Battle Page ********-->
   <section id="battle">
     <div class="col-md-6" id="player1">
-      <h3 class="player-title">Player 1</h4>
+      <h3 class="player-title">TOMMY</h4>
 
       <div class="playerIntro">
-        <p id="player1text">An Drone with <i>17</i> Damage and <i>10</i> Protection</p>
+        <!--<p id="player1text"><i>17</i> Damage and <i>10</i> Protection</p>-->
         <img id="Player1WeaponImg" src="image/fire.png"></img>
         <img id="Player1ModificationImg" src="image/anchor.png"></img>
+        <img id="player1AnimalStyleImg" src="image/Bear2.png"></img>
       </div>
 
-      <div class="health"><span>Player 1's Health:</span><span id="player1Health"></span></div>
+      <div class="health"><span>Tommy's Health:</span><span id="player1Health"></span></div>
       <div class="progress">
         
         <div id="player1Progress" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="90" style="width:100%">
         </div>
       </div>
-      
       <div class="imgInBattle"><img id="player1Img" src="image/drone.png"></img></div>
     </div>
 
 
 
     <div class="col-md-6" id="player2">
-      <h3 class="player-title">Player 2</h4>
+      <h3 class="player-title">SYLVIA - THE AWESOME</h4>
 
       <div class="playerIntro">
-        <p id="player2text">An Bipedal with <i>17</i> Damage and <i>10</i> Protection</p>
+        <!--<p id="player2text"><i>17</i> Damage and <i>10</i> Protection</p>-->
         <img id="Player2WeaponImg" src="image/water.png"></img>
         <img id="Player2ModificationImg" src="image/steer.png"></img>
       </div>
 
-      <div class="health"><span>Player 2's Health:</span><span id="player2Health"></span></div>
+      <div class="health"><span>Sylvia's Health:</span><span id="player2Health"></span></div>
       <div class="progress">
         
 
@@ -271,7 +274,7 @@
         </div>
       </div>
       
-      <div class="imgInBattle"><img id="player2Img" src="image/bike.png"></img></div>
+      <div class="imgInBattle"><img id="player2Img" src="image/Sylvia2.png"></img></div>
 
     </div>
 
@@ -290,7 +293,7 @@
               </div>
               
               <div class="modal-body">
-                <p>Player 1 Wins!</p>
+                <p>Tommy Wins!</p>
               </div>
             </div> 
           </div>

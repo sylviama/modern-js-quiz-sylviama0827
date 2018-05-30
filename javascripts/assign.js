@@ -1,6 +1,9 @@
 "use strict";
 
 var Game1=(function(originalGame){
+    var fat=false;
+    var hairLong=false;
+    var glasses="No";
 
     originalGame.clearModelButtons= function(){
       $("#player1DroneButtons").attr("style", "display:none");
@@ -18,6 +21,7 @@ var Game1=(function(originalGame){
       obj.Player1="empty";
       
       $("#player1Drone").click(function(){
+        fat=true;
         obj.Player1= new Game1.Drone();
         //show the hidden model pick buttons
         originalGame.clearModelButtons();
@@ -43,6 +47,7 @@ var Game1=(function(originalGame){
 
 
       $("#player1Bike").click(function(){
+        fat=false;
         obj.Player1 = new Game1.Bipedal();
         //show the hidden model pick buttons
         originalGame.clearModelButtons();
@@ -88,32 +93,35 @@ var Game1=(function(originalGame){
 
       //pick player 1's weapon
       $("#player1Fire").click(function(){
+        glasses="Red";
         //test if a player 1 model is selected (must select model than select weapon and modification)
         if(obj.Player1==="empty"){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Fire());
-          $("#Player1WeaponImg").attr("src", "image/fire.png");
+          $("#Player2WeaponImg").attr("src", "image/fire.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
 
       $("#player1Water").click(function(){
+        glasses="Black";
         if(obj.Player1==="empty"){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Water());
-          $("#Player1WeaponImg").attr("src", "image/water.png");
+          $("#Player2WeaponImg").attr("src", "image/water.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
 
       $("#player1Wind").click(function(){
+        glasses="No";
         if(obj.Player1==="empty"){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Wind());
-          $("#Player1WeaponImg").attr("src", "image/wind.png");
+          $("#Player2WeaponImg").attr("src", "image/wind.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
@@ -123,7 +131,7 @@ var Game1=(function(originalGame){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Egg());
-          $("#Player1WeaponImg").attr("src", "image/egg.png");
+          $("#Player2WeaponImg").attr("src", "image/egg.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
@@ -133,7 +141,7 @@ var Game1=(function(originalGame){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Spear());
-          $("#Player1WeaponImg").attr("src", "image/spear.png");
+          $("#Player2WeaponImg").attr("src", "image/spear.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
@@ -143,28 +151,30 @@ var Game1=(function(originalGame){
           $("#player1WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setWeapon(new Game1.Dagger());
-          $("#Player1WeaponImg").attr("src", "image/dagger.png");
+          $("#Player2WeaponImg").attr("src", "image/dagger.png");
           $("#pass1").attr("style", "display:inline block");
           }
       });
 
       //assign modification to Player1
       $("#player1GPS").click(function(){
+        hairLong=true;
         if(obj.Player1==="empty"){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.GPS());
-          $("#Player1ModificationImg").attr("src", "image/GPS.png");
+          $("#Player2ModificationImg").attr("src", "image/GPS.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
 
       $("#player1Love").click(function(){
+        hairLong=false;
         if(obj.Player1==="empty"){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.Love());
-          $("#Player1ModificationImg").attr("src", "image/love.png");
+          $("#Player2ModificationImg").attr("src", "image/love.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
@@ -174,7 +184,7 @@ var Game1=(function(originalGame){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.Anchor());
-          $("#Player1ModificationImg").attr("src", "image/anchor.png");
+          $("#Player2ModificationImg").attr("src", "image/anchor.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
@@ -184,7 +194,7 @@ var Game1=(function(originalGame){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.Watch());
-          $("#Player1ModificationImg").attr("src", "image/watch.png");
+          $("#Player2ModificationImg").attr("src", "image/watch.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
@@ -194,7 +204,7 @@ var Game1=(function(originalGame){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.Shield());
-          $("#Player1ModificationImg").attr("src", "image/shield.png");
+          $("#Player2ModificationImg").attr("src", "image/shield.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
@@ -204,10 +214,53 @@ var Game1=(function(originalGame){
           $("#player1ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player1.setModification(new Game1.Steering());
-          $("#Player1ModificationImg").attr("src", "image/steer.png");
+          $("#Player2ModificationImg").attr("src", "image/steer.png");
           $("#pass2").attr("style", "display:inline block");
           }
       });
+
+      //decide which Tommy image to show in the battle page
+      $("#next5").click(function(){
+        if(fat){
+          if(hairLong){
+            if(glasses==="No"){
+              $("#player1Img").attr("src", "image/FatLongH.png");
+            }else if(glasses==="Red"){
+              $("#player1Img").attr("src", "image/RedGLongHFat.png");
+            }else{
+              $("#player1Img").attr("src", "image/LongHBlackGFat.png");
+            }
+          }else{
+            if(glasses==="No"){
+              $("#player1Img").attr("src", "image/FatNo.png");
+            }else if(glasses==="Red"){
+              $("#player1Img").attr("src", "image/RedGFat.png");
+            }else{
+              $("#player1Img").attr("src", "image/BlackGFat.png");
+            }
+          }
+        }else{
+          if(hairLong){
+            if(glasses==="No"){
+              $("#player1Img").attr("src", "image/LongHNoGS.png");
+            }else if(glasses==="Red"){
+              $("#player1Img").attr("src", "image/RedGLongHSk.png");
+            }else{
+              $("#player1Img").attr("src", "image/BlackGLongHS.png");
+            }
+          }else{
+            if(glasses==="No"){
+              $("#player1Img").attr("src", "image/nothing.png");
+            }else if(glasses==="Red"){
+              $("#player1Img").attr("src", "image/RedGSkinny.png");
+            }else{
+              $("#player1Img").attr("src", "image/BlackGShortH.png");
+            }
+          }
+        }
+      });
+        
+      
     
 
 
@@ -230,8 +283,7 @@ var Game1=(function(originalGame){
         $("#player1AdvancedDrone").click(function(){
           obj.Player2= new Game1.AdvancedDrone();
         })
-
-        $("#player2Img").attr("src", "image/drone.png");
+        $("#player1AnimalStyleImg").attr("src", "image/Bear2.png");
         $("#pass3").attr("style", "display:inline block");
       });
 
@@ -252,7 +304,7 @@ var Game1=(function(originalGame){
           obj.Player2= new Game1.AdvancedBipedal();
         })
 
-        $("#player2Img").attr("src", "image/bike.png");
+        $("#player1AnimalStyleImg").attr("src", "image/Rabbit2.png");
         $("#pass3").attr("style", "display:inline block");
       });
 
@@ -273,7 +325,7 @@ var Game1=(function(originalGame){
           obj.Player2= new Game1.AdvancedAtv();
         })
 
-        $("#player2Img").attr("src", "image/atv.png");
+        $("#player1AnimalStyleImg").attr("src", "image/Bunny2.png");
         $("#pass3").attr("style", "display:inline block");
       });
 
@@ -282,8 +334,8 @@ var Game1=(function(originalGame){
         if(obj.Player2==="empty"){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
-          obj.Player2.setWeapon(new Game1.Fire());
-          $("#Player2WeaponImg").attr("src", "image/fire.png");
+          obj.Player1.setWeapon(new Game1.Fire());
+          $("#Player1WeaponImg").attr("src", "image/fire.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -293,7 +345,7 @@ var Game1=(function(originalGame){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setWeapon(new Game1.Water());
-          $("#Player2WeaponImg").attr("src", "image/water.png");
+          $("#Player1WeaponImg").attr("src", "image/water.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -303,7 +355,7 @@ var Game1=(function(originalGame){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setWeapon(new Game1.Wind());
-          $("#Player2WeaponImg").attr("src", "image/wind.png");
+          $("#Player1WeaponImg").attr("src", "image/wind.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -313,7 +365,7 @@ var Game1=(function(originalGame){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setWeapon(new Game1.Egg());
-          $("#Player2WeaponImg").attr("src", "image/egg.png");
+          $("#Player1WeaponImg").attr("src", "image/egg.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -323,7 +375,7 @@ var Game1=(function(originalGame){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setWeapon(new Game1.Spear());
-          $("#Player2WeaponImg").attr("src", "image/spear.png");
+          $("#Player1WeaponImg").attr("src", "image/spear.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -333,7 +385,7 @@ var Game1=(function(originalGame){
           $("#player2WeaponAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setWeapon(new Game1.Dagger());
-          $("#Player2WeaponImg").attr("src", "image/dagger.png");
+          $("#Player1WeaponImg").attr("src", "image/dagger.png");
           $("#pass4").attr("style", "display:inline block");
           }
       });
@@ -344,7 +396,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.GPS());
-          $("#Player2ModificationImg").attr("src", "image/GPS.png");
+          $("#Player1ModificationImg").attr("src", "image/GPS.png");
           $("#pass5").attr("style", "display:inline block");
           }
       });
@@ -354,7 +406,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.Love());
-          $("#Player2ModificationImg").attr("src", "image/love.png");
+          $("#Player1ModificationImg").attr("src", "image/love.png");
           $("#pass5").attr("style", "display:inline block");
           }
       });
@@ -364,7 +416,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.Anchor());
-          $("#Player2ModificationImg").attr("src", "image/anchor.png");
+          $("#Player1ModificationImg").attr("src", "image/anchor.png");
           $("#pass5").attr("style", "display:inline block");
           }
       });
@@ -374,7 +426,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.Watch());
-          $("#Player2ModificationImg").attr("src", "image/watch.png");
+          $("#Player1ModificationImg").attr("src", "image/watch.png");
           $("#pass5").attr("style", "display:inline block");
         }
       });
@@ -384,7 +436,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.Shield());
-          $("#Player2ModificationImg").attr("src", "image/shield.png");
+          $("#Player1ModificationImg").attr("src", "image/shield.png");
           $("#pass5").attr("style", "display:inline block");
           }
       });
@@ -394,7 +446,7 @@ var Game1=(function(originalGame){
           $("#player2ModificationAlert").attr("style", "display: inline block");
         } else{
           obj.Player2.setModification(new Game1.Steering());
-          $("#Player2ModificationImg").attr("src", "image/steer.png");
+          $("#Player1ModificationImg").attr("src", "image/steer.png");
           $("#pass5").attr("style", "display:inline block");
           }
       });
